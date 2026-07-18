@@ -20,75 +20,95 @@
       "logoUrl": "",
       "microlessons": [
         {
-          "friendlyName": "Concepts",
-          "dirName": "concepts",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "RESTful HTTP Methods",
-          "dirName": "restful-http-methods",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "RESTful Routing Conventions",
-          "dirName": "restful-routing-conventions",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "RESTful Routing Conventions for APIs",
-          "dirName": "restful-routing-conventions-for-apis",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Activity: Create a RESTful Routing Chart",
-          "dirName": "activity-create-a-restful-routing-chart",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Routing for Embedded Resources",
-          "dirName": "routing-for-embedded-resources",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Routing for Referenced Resources",
-          "dirName": "routing-for-referenced-resources",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        }
+    "friendlyName": "Setup",
+    "dirName": "setup",
+    "type": "Content",
+    "skill": "Cloning the MEN Auth repository",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Static Files and the Public Folder",
+    "dirName": "static-files",
+    "type": "Content",
+    "skill": "Setting up the public folder, CSS, and images",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Middleware",
+    "dirName": "middleware",
+    "type": "Content",
+    "skill": "Protecting routes with middleware",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Create a Navigation Partial",
+    "dirName": "nav-partial",
+    "type": "Content",
+    "skill": "Creating a reusable navigation partial",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Models",
+    "dirName": "models",
+    "type": "Content",
+    "skill": "Creating Mongoose schemas and models",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Adding a Feature",
+    "dirName": "adding-a-feature",
+    "type": "Content",
+    "skill": "Connecting views, routes, and controllers",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Views",
+    "dirName": "views",
+    "type": "Content",
+    "skill": "Following conventions for creating EJS views",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Routes",
+    "dirName": "routes",
+    "type": "Content",
+    "skill": "Following conventions for building Express routes",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Controllers",
+    "dirName": "controllers",
+    "type": "Content",
+    "skill": "Following conventions for writing controller functions",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  }
       ],
       "isHeaderShown": true,
       "isHeaderModuleNavShown": true,
@@ -119,55 +139,95 @@
       "logoUrl": "",
       "microlessons": [
         {
-          "friendlyName": "Concepts",
-          "dirName": "concepts",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "RESTful Routing Conventions",
-          "dirName": "restful-routing-conventions",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Activity: Create a RESTful Routing Chart",
-          "dirName": "activity-create-a-restful-routing-chart",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Routing for Embedded Resources",
-          "dirName": "routing-for-embedded-resources",
-          "type": "Level Up content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Routing for Referenced Resources",
-          "dirName": "routing-for-referenced-resources",
-          "type": "Level Up content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        }
+    "friendlyName": "Setup",
+    "dirName": "setup",
+    "type": "Content",
+    "skill": "Cloning the MEN Auth repository",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Static Files and the Public Folder",
+    "dirName": "static-files",
+    "type": "Content",
+    "skill": "Setting up the public folder, CSS, and images",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Middleware",
+    "dirName": "middleware",
+    "type": "Content",
+    "skill": "Protecting routes with middleware",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Create a Navigation Partial",
+    "dirName": "nav-partial",
+    "type": "Content",
+    "skill": "Creating a reusable navigation partial",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Models",
+    "dirName": "models",
+    "type": "Content",
+    "skill": "Creating Mongoose schemas and models",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Adding a Feature",
+    "dirName": "adding-a-feature",
+    "type": "Content",
+    "skill": "Connecting views, routes, and controllers",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Views",
+    "dirName": "views",
+    "type": "Content",
+    "skill": "Following conventions for creating EJS views",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Routes",
+    "dirName": "routes",
+    "type": "Content",
+    "skill": "Following conventions for building Express routes",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Controllers",
+    "dirName": "controllers",
+    "type": "Content",
+    "skill": "Following conventions for writing controller functions",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  }
       ],
       "isHeaderShown": true,
       "isHeaderModuleNavShown": true,
@@ -198,45 +258,95 @@
       "logoUrl": "",
       "microlessons": [
         {
-          "friendlyName": "Concepts",
-          "dirName": "concepts",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "RESTful HTTP Methods",
-          "dirName": "restful-http-methods",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "RESTful Routing Conventions for APIs",
-          "dirName": "restful-routing-conventions-for-apis",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Activity: Create a RESTful Routing Chart",
-          "dirName": "activity-create-a-restful-routing-chart",
-          "type": "Level Up content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        }
+    "friendlyName": "Setup",
+    "dirName": "setup",
+    "type": "Content",
+    "skill": "Cloning the MEN Auth repository",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Static Files and the Public Folder",
+    "dirName": "static-files",
+    "type": "Content",
+    "skill": "Setting up the public folder, CSS, and images",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Middleware",
+    "dirName": "middleware",
+    "type": "Content",
+    "skill": "Protecting routes with middleware",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Create a Navigation Partial",
+    "dirName": "nav-partial",
+    "type": "Content",
+    "skill": "Creating a reusable navigation partial",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Models",
+    "dirName": "models",
+    "type": "Content",
+    "skill": "Creating Mongoose schemas and models",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Adding a Feature",
+    "dirName": "adding-a-feature",
+    "type": "Content",
+    "skill": "Connecting views, routes, and controllers",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Views",
+    "dirName": "views",
+    "type": "Content",
+    "skill": "Following conventions for creating EJS views",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Routes",
+    "dirName": "routes",
+    "type": "Content",
+    "skill": "Following conventions for building Express routes",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  },
+  {
+    "friendlyName": "Controllers",
+    "dirName": "controllers",
+    "type": "Content",
+    "skill": "Following conventions for writing controller functions",
+    "learningObjective": "",
+    "videoUrl": "",
+    "videoLengthInMinutes": 0,
+    "estimatedDeliveryTimeInMinutes": 0
+  }
       ],
       "isHeaderShown": true,
       "isHeaderModuleNavShown": true,

@@ -14,44 +14,53 @@ The controller action often communicates with a fourth part:
 
 4. **Model** — The Mongoose model used to read or change database data.
 
-A request usually follows this flow:
+## Feature Planning Checklist
+
+Before building a feature, answer these questions:
+
+### View
+
+* Which page does the user need?
+* Does the resource need its own folder inside `views`?
+* Is this a new, index, show, or edit page?
+* What variables must the controller pass to the view?
+* Does the page need a form?
+* What route should the form submit to?
+
+### Route
+
+* Which HTTP method should be used?
+* What should the URL be?
+* Does the route need a resource ID?
+* Does it need both a parent ID and embedded resource ID?
+* Does the user need to be signed in?
+* Which controller action should run?
+
+### Controller
+
+* What should the controller action be called?
+* Does it need data from `req.body`?
+* Does it need an ID from `req.params`?
+* Does it need the current user from `req.session.user`?
+* Which Mongoose method should it use?
+* Should it render a view or redirect?
+* Does it need an ownership check?
+* What should happen if an error occurs?
+
+Build one complete feature at a time:
 
 ```plaintext
-User action
+Plan the view
     ↓
-Route
+Plan the route
     ↓
-Controller action
+Write the controller action
     ↓
-Mongoose model
+Connect the route and action
     ↓
-Controller response
+Test the feature
     ↓
-EJS view or redirect
+Commit the working code
 ```
 
-For example, when a user opens the new listing form:
-
-```plaintext
-User visits /listings/new
-    ↓
-GET /listings/new
-    ↓
-newListing controller action
-    ↓
-Render views/listings/new.ejs
-```
-
-When a user submits the form:
-
-```plaintext
-User submits the form
-    ↓
-POST /listings
-    ↓
-create controller action
-    ↓
-Listing.create()
-    ↓
-Redirect to /listings
-```
+Do not build every view first and every route later. Complete one user story from beginning to end before moving to the next feature.
