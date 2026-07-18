@@ -70,16 +70,6 @@
     "estimatedDeliveryTimeInMinutes": 0
   },
   {
-    "friendlyName": "Adding a Feature",
-    "dirName": "adding-a-feature",
-    "type": "Content",
-    "skill": "Connecting views, routes, and controllers",
-    "learningObjective": "",
-    "videoUrl": "",
-    "videoLengthInMinutes": 0,
-    "estimatedDeliveryTimeInMinutes": 0
-  },
-  {
     "friendlyName": "Views",
     "dirName": "views",
     "type": "Content",
@@ -189,16 +179,6 @@
     "estimatedDeliveryTimeInMinutes": 0
   },
   {
-    "friendlyName": "Adding a Feature",
-    "dirName": "adding-a-feature",
-    "type": "Content",
-    "skill": "Connecting views, routes, and controllers",
-    "learningObjective": "",
-    "videoUrl": "",
-    "videoLengthInMinutes": 0,
-    "estimatedDeliveryTimeInMinutes": 0
-  },
-  {
     "friendlyName": "Views",
     "dirName": "views",
     "type": "Content",
@@ -302,16 +282,6 @@
     "dirName": "models",
     "type": "Content",
     "skill": "Creating Mongoose schemas and models",
-    "learningObjective": "",
-    "videoUrl": "",
-    "videoLengthInMinutes": 0,
-    "estimatedDeliveryTimeInMinutes": 0
-  },
-  {
-    "friendlyName": "Adding a Feature",
-    "dirName": "adding-a-feature",
-    "type": "Content",
-    "skill": "Connecting views, routes, and controllers",
     "learningObjective": "",
     "videoUrl": "",
     "videoLengthInMinutes": 0,
