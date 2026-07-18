@@ -5,15 +5,9 @@
 
 ## About
 
-This guide explains the main parts of a MEN stack application:
+This guide will help you in starting to work on Project 2.
 
-* **MongoDB** stores the application data.
-* **Express** receives requests and sends responses.
-* **Node.js** runs the application.
-* **EJS** creates the pages shown to the user.
-* **Mongoose** connects the Express application to MongoDB.
-
-You will begin your project by cloning the Session Auth Template. The template already includes user authentication, sessions, middleware, and the basic Express application structure.
+You will begin your project by cloning the Session Auth Template. 
 
 You will then add your own resources and features.
 
@@ -27,7 +21,6 @@ For example, Open House had a `Listing` resource. A different project may have r
 * study groups
 
 Throughout this guide, we will use the [Open House `Listing`](https://github.com/SEB-14-Bahrain/open-house) resource as our main example.
-
 
 ## Content
 
