@@ -36,6 +36,16 @@ Import the model at the top:
 const Listing = require('../models/listing')
 ```
 
+The model gives the application methods for working with listings:
+
+```js
+Listing.create()
+Listing.find()
+Listing.findById()
+Listing.findByIdAndUpdate()
+Listing.findByIdAndDelete()
+```
+
 Export each action at the bottom as you write each function:
 
 ```js

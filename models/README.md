@@ -22,11 +22,7 @@ Before creating views, routes, and controller actions, plan what information you
 
 The Session Auth Template already contains a `models` folder and a `User` model.
 
-Create a model file for your main resource:
-
-```bash
-touch models/listing.js
-```
+Create a model file for your main resource.
 
 Examples:
 
@@ -39,7 +35,7 @@ models/support-ticket.js
 
 ## 2. Create a basic schema
 
-Open `models/listing.js`.
+Here is the Listing schema from open house:
 
 ```js
 const mongoose = require('mongoose')
@@ -72,18 +68,6 @@ const Listing = mongoose.model('Listing', listingSchema)
 module.exports = Listing
 ```
 
-The schema describes the structure of a listing.
-
-The model gives the application methods for working with listings:
-
-```js
-Listing.create()
-Listing.find()
-Listing.findById()
-Listing.findByIdAndUpdate()
-Listing.findByIdAndDelete()
-```
-
 > 💡 Use a singular, capitalized name when creating the model: `Listing`, `Book`, `Recipe`, or `Event`.
 
 ### Common schema data types
@@ -97,29 +81,6 @@ Listing.findByIdAndDelete()
 | `mongoose.Schema.Types.ObjectId` | References to other documents       |
 | Array                            | Tags, users, embedded comments      |
 
-Example:
-
-```js
-const eventSchema = new mongoose.Schema({
-    title: {
-        type: String,
-    },
-    description: {
-        type: String,
-    },
-    capacity: {
-        type: Number,
-        min: 1,
-    },
-    isPublic: {
-        type: Boolean,
-        default: true,
-    },
-    eventDate: {
-        type: Date,
-    },
-})
-```
 
 ### Common schema options
 
@@ -138,20 +99,6 @@ Schema options help validate and clean your data.
 | `lowercase: true` | Changes a string to lowercase           |
 | `unique: true`    | Creates a unique database index         |
 
-Example:
-
-```js
-status: {
-    type: String,
-    enum: ['available', 'reserved', 'unavailable'],
-    default: 'available',
-}
-```
-
-Only the values listed in `enum` are accepted.
-
-> 💡 HTML validation improves the user experience, but your model must also validate the data. A user can send a request without using your form.
-
 
 ## 3. Reference the resource owner
 
@@ -167,9 +114,9 @@ owner: {
 }
 ```
 
-The value stored in `owner` is the `_id` of a user.
+`owner` is the `_id` of a user.
 
-When creating a listing, the controller should add the signed-in user's ID:
+The `create` controller should add the signed-in user's ID:
 
 ```js
 listingData.owner = req.session.user._id
@@ -180,14 +127,11 @@ await Listing.create(req.body)
 The owner should come from the signed-in session.
 
 
-
-## 4. Embed related data (optional)
+## 4. Embed related data _(optional)_
 
 An **embedded document** is stored directly inside its parent document.
 
 Open House embeds questions inside listings.
-
-Create the question schema before the listing schema:
 
 ```js
 const mongoose = require('mongoose')
@@ -264,7 +208,7 @@ const listing = await Listing
     .populate('questions.author')
 ```
 
-## 5. References compared with embedded documents
+### References compared with embedded documents
 
 | Use a reference when...                            | Use an embedded document when...                     |
 | -------------------------------------------------- | ---------------------------------------------------- |
@@ -290,11 +234,11 @@ Examples of embedded documents:
 > 🧠 Embedding is not automatically better or easier. Decide whether the related data needs to exist separately from its parent.
 
 
-## 6. Add roles to the User model (optional)
+## 5. Add roles to the User model _(optional)_
 
 A **role** describes a category of user and the permissions that category receives.
 
-A simple Project 2 application may use two roles:
+Your application might use two roles:
 
 ```plaintext
 user
@@ -311,27 +255,6 @@ role: {
 }
 ```
 
-A simplified user schema may include:
-
-```js
-const userSchema = new mongoose.Schema({
-    username: {
-        type: String,
-        required: true,
-        unique: true,
-    },
-    password: {
-        type: String,
-        required: true,
-    },
-    role: {
-        type: String,
-        enum: ['user', 'admin'],
-        default: 'user',
-    },
-})
-```
-
 The default role should be:
 
 ```js
@@ -339,16 +262,6 @@ The default role should be:
 ```
 
 Do not include a role selection in the public sign-up form.
-
-A user should not be able to submit:
-
-```js
-{
-    role: 'admin'
-}
-```
-
-and give themselves admin permissions.
 
 Create or assign admins through a controlled process, such as:
 
