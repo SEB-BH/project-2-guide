@@ -69,14 +69,6 @@ Use clear parameter names:
 :recipeId
 ```
 
-Avoid unclear names such as:
-
-```plaintext
-:id
-:item
-:thing
-```
-
 
 ## Other useful routes
 

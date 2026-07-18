@@ -36,7 +36,7 @@ Import the model at the top:
 const Listing = require('../models/listing')
 ```
 
-The model gives the application methods for working with listings:
+The model gives the application methods for working with a resource:
 
 ```js
 Listing.create()
@@ -126,17 +126,21 @@ Save the listing
 
 ```js
 const createQuestion = async (req, res) => {
+// find the listing
     const foundListing = await Listing.findById(
         req.params.listingId
     )
 
+// get the question data from the form
     const questionData = {
         text: req.body.text,
         author: req.session.user._id
     }
 
+// add the question data to the found listing
     foundListing.questions.push(questionData)
 
+// save the listing
     await foundListing.save()
 
     res.redirect(
@@ -148,6 +152,7 @@ const createQuestion = async (req, res) => {
 ### Find one embedded question
 
 ```js
+// use the found listing to then find a specific question to update or delete
 const foundQuestion =
     foundListing.questions.id(
         req.params.questionId
@@ -157,31 +162,21 @@ const foundQuestion =
 ### Update
 
 ```js
+// update the question
 foundQuestion.text = req.body.text
 
+// save the listing (which also saves the question)
 await foundListing.save()
 ```
 
 ### Delete
 
 ```js
+// delete the question
 foundQuestion.deleteOne()
 
+// save the listing with the question now deleted
 await foundListing.save()
 ```
 
 Embedded questions do not use a separate `Question` model. Save the parent listing after making changes.
-
-
-## Quick checklist
-
-Before testing a controller action, confirm:
-
-* the model is imported
-* the function is created
-* the function is exported
-* the controller is imported into `server.js`
-* the action is connected to a route
-* `req.body` field names match the form
-* `req.params` names match the route
-* the function renders or redirects
