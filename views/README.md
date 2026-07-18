@@ -3,25 +3,13 @@
   <span class="subhead">Views</span>
 </h1>
 
-
-
-A **view** is an EJS file that creates HTML.
-
-Each main resource should normally have its own folder inside `views`.
-
-Open House had a `Listing` resource, so it used:
+A **view** is an EJS file that creates HTML.  Each main resource should normally have its own folder inside `views`.  Open House had a `Listing` resource, so it used:
 
 ```plaintext
 views/listings/
 ```
 
-Create a folder for your resource:
-
-```bash
-mkdir -p views/listings
-```
-
-Replace `listings` with the plural name of your resource.
+Create a folder for your resource.
 
 Examples:
 
@@ -53,52 +41,6 @@ For example:
 * `update` normally redirects after updating data.
 * `deleteListing` normally redirects after deleting data.
 
-## The new view
-
-The new view displays the form used to create a resource.
-
-The form sends a `POST` request to:
-
-```plaintext
-/listings
-```
-
-The input `name` values should match fields in the Mongoose model:
-
-```ejs
-name="streetAddress"
-name="city"
-name="price"
-name="size"
-```
-
-## The index view
-
-The index view displays all resources.
-
-The controller must pass a `listings` variable to this view.
-
-You will likely use `forEach` to display all of the items in this view.
-
-
-## The show view
-
-The show view displays one resource.
-
-Hiding edit and delete buttons improves the user experience (and are part of the project requirements).
-
-## The edit view
-
-The edit view displays a form filled with the current resource data.
-
-HTML forms only support `GET` and `POST`.
-
-Method Override reads:
-
-```plaintext
-?_method=PUT
-```
-and changes the request into a `PUT` request.
 
 ## Other useful views
 
@@ -144,6 +86,8 @@ This same pattern can be used for:
 
 An **embedded resource** belongs inside another resource.
 
+**Create a nested view folder for embedded resources.**
+
 In Open House, questions were embedded inside listings.
 
 A question does not need its own main index page. It is displayed inside the listing's show page.
@@ -155,12 +99,6 @@ A question does not need its own main index page. It is displayed inside the lis
 | Update      | `views/listings/questions/edit.ejs` | Displays the edit question form            |
 | Delete      | `views/listings/show.ejs`           | Displays a delete button beside a question |
 
-Create the nested view folder:
-
-```bash
-mkdir -p views/listings/questions
-touch views/listings/questions/edit.ejs
-```
 
 ### Create a question
 
