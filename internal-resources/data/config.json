@@ -1,11 +1,11 @@
 {
   "org": {
     "friendlyName": "Modular Curriculum All Courses",
-    "name": "modular-curriculum-all-courses"
+    "name": "SEB-BH"
   },
   "repo": {
-    "friendlyName": "RESTful Routing",
-    "name": "restful-routing",
+    "friendlyName": "Project 2 Guie",
+    "name": "project-2-guide",
     "type": "Lesson",
     "about": "",
     "starterCode": "",
