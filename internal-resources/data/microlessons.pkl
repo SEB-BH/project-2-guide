@@ -1,0 +1,52 @@
+import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl" as Template
+
+// Add microlessons here, in the order they should be delivered
+
+concepts = new Template.Microlesson {
+  friendlyName = "Concepts"
+  dirName = "concepts"
+  type = "Content"
+  videoUrl = ""
+}
+
+restfulRoutingConventions = new Template.Microlesson {
+  friendlyName = "RESTful Routing Conventions"
+  dirName = "restful-routing-conventions"
+  type = "Content"
+  videoUrl = ""
+}
+
+routingForEmbeddedResources = new Template.Microlesson {
+  friendlyName = "Routing for Embedded Resources"
+  dirName = "routing-for-embedded-resources"
+  type = "Content"
+  videoUrl = ""
+}
+
+routingForReferencedResources = new Template.Microlesson {
+  friendlyName = "Routing for Referenced Resources"
+  dirName = "routing-for-referenced-resources"
+  type = "Content"
+  videoUrl = ""
+}
+
+restfulHttpMethods = new Template.Microlesson {
+  friendlyName = "RESTful HTTP Methods"
+  dirName = "restful-http-methods"
+  type = "Content"
+  videoUrl = ""
+}
+
+restfulRoutingConventionsForApis = new Template.Microlesson {
+  friendlyName = "RESTful Routing Conventions for APIs"
+  dirName = "restful-routing-conventions-for-apis"
+  type = "Content"
+  videoUrl = ""
+}
+
+activityCreateRestfulRoutingChart = new Template.Microlesson {
+  friendlyName = "Activity: Create a RESTful Routing Chart"
+  dirName = "activity-create-a-restful-routing-chart"
+  type = "Content"
+  videoUrl = ""
+}
