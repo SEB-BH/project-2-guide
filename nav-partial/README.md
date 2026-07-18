@@ -52,32 +52,18 @@ The `user` variable is provided by the `passUserToView` middleware.
 
 Use the sign-out route already included in your auth template. Do not create a second sign-out route.
 
-## 3. Include the partial in a root-level view (home.ejs)
+## 3. Include the partial 
 
-Inside a file such as `views/index.ejs`, use:
+In a root level view such as `views/index.ejs`, use:
 
 ```ejs
 <%- include('./partials/nav.ejs') %>
 ```
 
-## 4. Include the partial in a nested view (any view inside of another folder like views/listings)
-
-Inside a file such as `views/listings/index.ejs`, move up one folder before entering `partials`:
+Inside a nested view such as `views/listings/index.ejs`, move up one folder before entering `partials`:
 
 ```ejs
 <%- include('../partials/nav.ejs') %>
-```
-
-For example:
-
-```ejs
-  <%- include('../partials/nav.ejs') %>
-
-  <main>
-    <h1>All Listings</h1>
-  </main>
-</body>
-</html>
 ```
 
 Your public files and navigation partial are now ready.
