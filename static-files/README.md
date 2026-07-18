@@ -99,11 +99,10 @@ project-name/
 │   ├── images/
 │   ├── stylesheets/
 │   │   └── style.css
-│   ├── favicon.ico
-│   └── site.webmanifest
+│   └── favicon.ico
 ```
 
-**Link the favicon files **
+**Link the favicon files**
 
 Add the following code inside the `<head>` of your EJS page:
 
@@ -116,13 +115,7 @@ Browsers often save old favicon files in their cache. If the previous icon still
 
 ## 5. Reminder: add images inside of the public folder
 
-Place images inside:
-
-```plaintext
-public/images/
-```
-
-For example:
+Place images inside. For example:
 
 ```plaintext
 public/images/default-listing.jpg
@@ -131,10 +124,7 @@ public/images/default-listing.jpg
 Use the image in an EJS page:
 
 ```html
-<img
-  src="/images/default-listing.jpg"
-  alt="Default property listing"
->
+<img src="/images/default-listing.jpg" alt="Default property listing">
 ```
 
 Again, do not include `public` in the image path.

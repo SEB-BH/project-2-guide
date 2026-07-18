@@ -96,13 +96,15 @@ module.exports = isSignedIn
 ```
 
 ```js
+// server.js
+
 const isSignedIn = require('./middleware/is-signed-in.js')
 ```
 
 Protect the complete resource controller:
 
 ```js
-app.get('/listings', isSignedIn, listingsController.newListings);
+app.get('/listings/new', isSignedIn, listingsController.newListings);
 ```
 
 - This means accessing the new listing form requires a signed-in user.
@@ -186,18 +188,3 @@ app.get(
 Use `isSignedIn` before `isAdmin`.
 
 `isSignedIn` confirms that a session user exists. `isAdmin` then checks the user's role.
-
-
-Do not protect an admin route only by hiding its link in EJS.
-
-This is not enough:
-
-```ejs
-<% if (user.role === 'admin') { %>
-  <a href="/admin">Admin Dashboard</a>
-<% } %>
-```
-
-Hiding the link improves the interface, but a user can manually enter the URL or send the request.
-
-The server route must also use the `isAdmin` middleware
