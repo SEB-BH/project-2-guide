@@ -31,7 +31,6 @@ Throughout this guide, we will use the [Open House `Listing`](https://github.com
 | [Middleware](./middleware/README.md)                                            | Protecting routes with middleware                                             |
 | [Create a Navigation Partial](./nav-partial/README.md)                          | Create a nav partial to reuse on all of your pages                            |
 | [Models](./models/README.md)                                                    | Create your schemas                                                           |
-<!-- | [Adding a Feature](./adding-a-feature/README.md)                                | MEN Stack architecture includes a view, a route, and a controller             | -->
 | [Views](./views/README.md)                                                      | Conventions for creating views                                                |
 | [Routes](./routes/README.md)                                                    | Conventions for building routes                                               |
 | [Controllers](./controllers/README.md)                                          | Conventions for writing controller functions                                  |
